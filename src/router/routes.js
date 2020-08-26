@@ -6,12 +6,14 @@ import RichMen from "../views/secondModule/richMen/richMen"
 import PoorMen from '../views/secondModule/poorMen/poorMen'
 import Women from '../views/secondModule/women/women'
 import LifeCycle from "../views/lifeCycle/lifeCycle"
+import UserLogin from "../views/login/userLogin"
+import Home from "../views/home/home"
 
 function router(){
   return (
 		<Router>
 			<Switch>
-				{/* <Route path="/" component={App}></Route> */}
+				{/* <Route path="/" component={UserLogin}></Route> */}
 				<Route path="/person" component={Person}></Route>
 				<Route
 					path="/men"
@@ -23,35 +25,12 @@ function router(){
 						</Men>
 					)}
 				></Route>
+				<Route path="/login" component={UserLogin}></Route>
 				<Route path="/lifeCycle" component={LifeCycle}></Route>
-				{/* <Redirect path="/*" to="/person" ></Redirect> */}
+				<Route path="/Home" component={Home}></Route>
+				{/* <Redirect path="/login" component={UserLogin}></Redirect> */}
 			</Switch>
 		</Router>
 	)
 }
 export default router
-
-// export const mapActionsRoutes = [
-//   {
-//     path: '/',
-//     component: App,
-//   },
-//   {
-//     path: '/person',
-//     component: Person,
-//   },
-//   {
-//     path: '/men',
-//     component: Men,
-//     children: [
-//       {
-//         path: '/men/richMen',
-//         component: RichMen,
-//       },
-//       {
-//         path: '/men/poorMen',
-//         component: PoorMen,
-//       },
-//     ],
-//   },
-// ]
