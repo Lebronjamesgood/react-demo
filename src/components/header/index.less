@@ -1,0 +1,83 @@
+.logo-box {
+  width: 100%;
+  height: 70px;
+  background-size: 100% 100%;
+   background: url(./../../assets/images/home/big_bt_bg@2x.png) no-repeat;
+  background-size: 100% 100%;
+  margin: 0 auto;
+  font-family: "HYK2GJ";
+  font-size: 35px;
+  color: #0ed0f3;
+  line-height: 60px;
+  text-align: center;
+  position: absolute;
+  top: 15px;
+   .user-info {
+    color: #03ffff;
+    font-size: 16px;
+    line-height: 40px;
+    position: relative;
+    top: 40px;
+    z-index: 1000;
+    width: 100%;
+    li:nth-child(1) {
+      float: left;
+      margin-left: 100px;
+      padding-right: 18px;
+      cursor: pointer;
+    }
+    li:nth-child(2) {
+      float: left;
+      margin-left: 100px;
+      padding-right: 18px;
+      cursor: pointer;
+      position: absolute;
+      left: 160px;
+    }
+    li:nth-child(3) {
+      float: left;
+      margin-left: 800px;
+      padding-right: 18px;
+      cursor: pointer;
+      position: absolute;
+      right: 240px;
+    }
+    li:last-child {
+      padding-right: 0;
+      margin-left: 50px;
+      border-right: none;
+      cursor: pointer;
+      position: absolute;
+      right: 100px;
+    }
+    .el-date-editor {
+      margin-left: -20px;
+      cursor: pointer;
+      .el-input__inner {
+        background: transparent;
+        color: #03ffff;
+        border: none;
+      }
+      .el-input__prefix {
+        display: none;
+      }
+    }
+  }
+  .ant-picker,.ant-picker-input{
+    background: transparent;
+    border: none;
+    input{
+      color: #03ffff;
+    }
+  }
+  .show-person {
+    background: url(./../../assets/images/home/select.png) no-repeat;
+    background-size: 100% 100%;
+    width: 130px;
+    position: fixed;
+    p {
+      height: 50px;
+      line-height: 50px;
+    }
+  }
+}

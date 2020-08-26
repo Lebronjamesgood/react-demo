@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>其他统计</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="60" cy="60" r="60"></circle>
+        <filter x="-10.0%" y="-10.0%" width="120.0%" height="120.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="12" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.231764482   0 0 0 0 0.933266255   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页备份" transform="translate(-900.000000, -821.000000)">
+            <g id="其他统计" transform="translate(880.000000, 801.000000)">
+                <g id="其他统计_export" transform="translate(20.000000, 20.000000)">
+                    <g id="其他统计">
+                        <g id="椭圆形">
+                            <use fill="#0266E3" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="统计报表" transform="translate(28.000000, 28.000000)" fill="#19DEFF" fill-rule="nonzero">
+                            <rect id="矩形" opacity="0" x="0" y="0" width="64" height="64"></rect>
+                            <path d="M54.4,43.2 C57.4789063,43.2 60,40.6789062 60,37.6 L60,9.6 C60,6.52109375 57.4789063,4 54.4,4 L9.6,4 C6.52109375,4 4,6.52109375 4,9.6 L4,37.6 C4,40.6789062 6.52109375,43.2 9.6,43.2 L26.4,43.2 L26.4,51.6 L8.2,51.6 C5.8921875,51.6 4,53.4921875 4,55.8 C4,58.1078125 5.8921875,60 8.2,60 L55.8,60 C58.1078125,60 60,58.1078125 60,55.8 C60,53.4921875 58.1078125,51.6 55.8,51.6 L37.6,51.6 L37.6,43.2 L54.4,43.2 Z M42.7,26.4 C42.7,24.8578125 42.7,23.6 44.2,23.6 C45.7,23.6 45.7,24.8578125 45.7,26.4 L45.7,32 C45.7,33.5421875 45.7,34.8 44.2,34.8 C42.7,34.8 42.7,33.5421875 42.7,32 L42.7,26.4 Z M21.7,32 C21.7,33.5421875 21.7,34.8 20.2,34.8 C18.7,34.8 18.7,33.5421875 18.7,32 L18.7,20.8 C18.7,19.2578125 18.7,18 20.2,18 C21.7,18 21.7,19.2578125 21.7,20.8 L21.7,32 Z M30.7,15.2 C30.7,13.6578125 30.7,12.4 32.2,12.4 C33.7,12.4 33.7,13.6578125 33.7,15.2 L33.7,32 C33.7,33.5421875 33.7,34.8 32.2,34.8 C30.7,34.8 30.7,33.5421875 30.7,32 L30.7,15.2 Z" id="形状"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

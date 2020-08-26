@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>综合统计</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="60" cy="60" r="60"></circle>
+        <filter x="-10.0%" y="-10.0%" width="120.0%" height="120.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="12" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.231764482   0 0 0 0 0.933266255   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页备份" transform="translate(-1226.000000, -501.000000)">
+            <g id="综合统计" transform="translate(1206.000000, 481.000000)">
+                <g id="综合统计_export" transform="translate(20.000000, 20.000000)">
+                    <g id="综合统计">
+                        <g id="椭圆形">
+                            <use fill="#0266E3" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="统计" transform="translate(28.000000, 28.000000)" fill="#19DEFF" fill-rule="nonzero">
+                            <rect id="矩形" opacity="0" x="0" y="0" width="64" height="64"></rect>
+                            <path d="M14.4528761,59.4720132 L14.4528761,22.5662167 C14.4528761,21.0945132 13.3205754,19.9625442 11.9624114,19.9625442 L4.49046466,19.9625442 C3.13230071,19.9625442 2,21.2076107 2,22.5662167 L2,59.4720132 L14.4528761,59.4720132 L14.4528761,59.4720132 Z M30.3019911,59.4720132 L30.3019911,6.71721228 C30.3019911,5.24539821 29.1700219,4 27.8114159,4 L20.3394691,4 C18.9813052,4 17.8490045,5.24539821 17.8490045,6.71721228 L17.8490045,59.4720132 L30.3019911,59.4720132 L30.3019911,59.4720132 Z M46.1509955,59.4720132 L46.1509955,36.151062 C46.1509955,34.6793584 45.019137,33.4342919 43.6605309,33.4342919 L36.1890263,33.4342919 C34.8304202,33.4342919 33.6980088,34.6793584 33.6980088,36.151062 L33.6980088,59.4720132 L46.1509955,59.4720132 L46.1509955,59.4720132 Z M62,59.4720132 L62,22.5662167 C62,21.0945132 60.8681415,19.9625442 59.5095353,19.9625442 L52.0380308,19.9625442 C50.6794246,19.9625442 49.5475661,21.2076107 49.5475661,22.5662167 L49.5475661,59.4720132 L62,59.4720132 L62,59.4720132 Z" id="形状"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

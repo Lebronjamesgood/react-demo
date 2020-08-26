@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>可视化指挥</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="60" cy="60" r="60"></circle>
+        <filter x="-10.0%" y="-10.0%" width="120.0%" height="120.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="12" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.231764482   0 0 0 0 0.933266255   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <filter x="-42.2%" y="-42.2%" width="184.4%" height="184.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 6.92497677e-05   0 0 0 0 0.344716233   0 0 0 0 0.726845562  0 0 0 1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="首页备份" transform="translate(-900.000000, -173.000000)">
+            <g id="可视化指挥" transform="translate(880.000000, 153.000000)">
+                <g id="可视化指挥_export" transform="translate(20.000000, 20.000000)">
+                    <g id="可视化指挥">
+                        <g id="椭圆形">
+                            <use fill="#0266E3" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                        </g>
+                        <g id="摄像头" filter="url(#filter-3)" transform="translate(28.000000, 28.000000)" fill-rule="nonzero">
+                            <rect id="矩形" fill="#1890FF" opacity="0" x="0" y="0" width="64" height="64"></rect>
+                            <path d="M32,23.8333333 C27.6,23.8333333 24,27.4333333 24,31.8333333 C24,36.2333333 27.6,39.8333333 32,39.8333333 C36.4,39.8333333 40,36.2333333 40,31.8333333 C40,27.4333333 36.4,23.8333333 32,23.8333333 Z" id="路径" fill="#03ECFF"></path>
+                            <path d="M61.3333333,29.3333333 C61.3333333,13.2 48.2666667,0 32,0 C15.7333333,0 2.66666669,13.2 2.66666669,29.3333333 C2.66666669,43.0666666 12.1333334,54.6666666 24.9333333,57.7333333 L21.4666667,61.3333333 L13.7333333,61.3333333 C13.0666666,61.3333333 12.5333333,61.8666666 12.5333333,62.6666667 C12.5333333,63.4666668 13.0666666,64 13.7333333,64 L51.2,64 C51.8666667,64 52.4,63.4666667 52.4,62.6666667 C52.4,61.8666667 51.8666667,61.3333334 51.2,61.3333333 L42.5333333,61.3333333 L39.0666667,57.8666667 C51.8666667,54.6666667 61.3333333,43.2 61.3333333,29.3333333 Z M32,8.5 C33.2,8.5 34,9.29999998 34,10.5 C34,11.7 33.2,12.5 32,12.5 C30.8,12.5 30,11.7000001 30,10.5 C30,9.29999989 30.8,8.5 32,8.5 Z M32,43.8333333 C25.4,43.8333333 20,38.4333333 20,31.8333333 C20,25.2333333 25.4,19.8333333 32,19.8333333 C38.6,19.8333333 44,25.2333333 44,31.8333333 C44,38.4333333 38.6,43.8333333 32,43.8333333 Z" id="形状" fill="#03ECFF"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

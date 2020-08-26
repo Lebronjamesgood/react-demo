@@ -8,6 +8,7 @@ import Women from '../views/secondModule/women/women'
 import LifeCycle from "../views/lifeCycle/lifeCycle"
 import UserLogin from "../views/login/userLogin"
 import Home from "../views/home/home"
+import Layout from  "../views/layout/layout"
 
 function router(){
   return (
@@ -28,6 +29,7 @@ function router(){
 				<Route path="/login" component={UserLogin}></Route>
 				<Route path="/lifeCycle" component={LifeCycle}></Route>
 				<Route path="/Home" component={Home}></Route>
+				<Route path="/layout" component={Layout}></Route>
 				{/* <Redirect path="/login" component={UserLogin}></Redirect> */}
 			</Switch>
 		</Router>

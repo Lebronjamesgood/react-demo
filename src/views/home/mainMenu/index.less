@@ -1,0 +1,123 @@
+ .pulse-icon {
+    display: inline-block;
+    width: 315px;
+    height: 315px;
+    border-radius: 100%;
+    background-color: transparent;
+    position: relative;
+    top: 420px;
+    left: 800px;
+    .circle{
+      background: url(./../../../assets/images/home/oval.png) center no-repeat;
+      background-size: 100% 100%;
+      width: 650px;
+      height: 650px;
+      position: absolute;
+      left: -160px;
+      top: -250px
+    }
+
+    .little-circle{
+      cursor: pointer;
+      .round-circle{
+        background: url(./../../../assets/images/home/oval1.png) center no-repeat;
+        background-size: 100% 100%;
+        -webkit-transform: rotate(360deg);
+        animation: rotation 3s linear infinite;
+        -moz-animation: rotation 3s linear infinite;
+        -webkit-animation: rotation 3s linear infinite;
+        -o-animation: rotation 3s linear infinite;
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        top: -8px;
+        left: -8px;
+      }
+      p{
+        font-size: 22px;
+        color:#3997FF ;
+      }
+    }
+    .little-circle:nth-child(1){
+      position: absolute;
+      top: -45px;
+      left: 275px;
+      p{
+        margin-top: 20px;
+      }
+    }
+    .little-circle:nth-child(2){
+      position: absolute;
+      top: 270px;
+      left: 595px;
+      p{
+        position: absolute;
+        top: 40px;
+        left: -110px;
+        display: inline-table;
+      }
+    }
+    .little-circle:nth-child(3){
+      position: absolute;
+      top: 595px;
+      left: 275px;
+      p{
+        position: absolute;
+        top: -55px;
+        left: 10px;
+      }
+    }
+    .little-circle:nth-child(4){
+      position: absolute;
+      top: 280px;
+      left: -45px;
+      p{
+        position: absolute;
+        top: 40px;
+        left: 130px;
+        display: inline-table;
+      }
+    }
+
+  }
+
+  @keyframes pulsate {
+    0% {
+      transform: scale(0.1, 0.1);
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: alpha(opacity=0);
+    }
+    50% {
+      opacity: 1;
+      -ms-filter: none;
+      filter: none;
+    }
+    100% {
+      transform: scale(2.4, 2.4);
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+      filter: alpha(opacity=0);
+    }
+  }
+  .center-circle{
+    position: absolute;
+    background: url(./../../../assets/images/home/center.png) center no-repeat;
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+    top: 275px;
+    left: 265px;
+  }
+  .center-flag{
+    position: absolute;
+    background: url(./../../../assets/images/home/redflag.png) center no-repeat;
+    background-size: 100% 100%;
+    width: 100px;
+    height: 100px;
+
+  }
+  @keyframes rotation{
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
