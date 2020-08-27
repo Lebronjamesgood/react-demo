@@ -20,7 +20,7 @@ class home extends Component {
 			<div className="app-wrapper">
 				<Header isSHow={this.state.showHeader} />
 				<div className="my-sidebar">
-					<MainMeun />
+					<MainMeun route={this.props}  />
 				</div>
 			</div>
 		)

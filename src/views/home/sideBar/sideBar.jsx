@@ -19,7 +19,9 @@ class home extends Component {
 		return (
 			<div className="app-wrapper">
 				<Header isSHow={this.state.showHeader} />
+        <div className="sider">
 
+        </div>
 				<MainMeun />
 			</div>
 		)

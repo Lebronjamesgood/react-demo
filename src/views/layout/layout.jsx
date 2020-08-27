@@ -14,6 +14,7 @@ class layout extends Component {
 		return (
 			<div className="layout">
 				<Header isSHow={this.state.showHeader} />
+				{this.props.children}
 			</div>
 		)
 	}

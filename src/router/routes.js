@@ -1,6 +1,6 @@
 import React from "react"
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import Person from '../views/firstModule/person'
+import { BrowserRouter as Router, Route, Switch,Redirect } from 'react-router-dom'
+import Person from '../views/secondModule/person/person'
 import Men from '../views/secondModule/men'
 import RichMen from "../views/secondModule/richMen/richMen"
 import PoorMen from '../views/secondModule/poorMen/poorMen'
@@ -14,23 +14,28 @@ function router(){
   return (
 		<Router>
 			<Switch>
-				{/* <Route path="/" component={UserLogin}></Route> */}
-				<Route path="/person" component={Person}></Route>
+				<Redirect path="/login" component={UserLogin}></Redirect>
+				<Route path="/login" component={UserLogin}></Route>
+				<Route path="/Home" component={Home}></Route>
 				<Route
-					path="/men"
+					path="/layout"
 					render={() => (
-						<Men>
-							<Route path="/men/richMen" component={RichMen}></Route>
-							<Route path="/men/poorMen" component={PoorMen}></Route>
-							<Route path="/men/women/:id" component={Women}></Route>
-						</Men>
+						<Layout>
+							<Route path="/layout/lifeCycle" component={LifeCycle}></Route>
+							<Route path="/layout/person" component={Person}></Route>
+							<Route
+								path="/layout/men"
+								render={() => (
+									<Men>
+										<Route path="/men/richMen" component={RichMen}></Route>
+										<Route path="/men/poorMen" component={PoorMen}></Route>
+										<Route path="/men/women/:id" component={Women}></Route>
+									</Men>
+								)}
+							></Route>
+						</Layout>
 					)}
 				></Route>
-				<Route path="/login" component={UserLogin}></Route>
-				<Route path="/lifeCycle" component={LifeCycle}></Route>
-				<Route path="/Home" component={Home}></Route>
-				<Route path="/layout" component={Layout}></Route>
-				{/* <Redirect path="/login" component={UserLogin}></Redirect> */}
 			</Switch>
 		</Router>
 	)
