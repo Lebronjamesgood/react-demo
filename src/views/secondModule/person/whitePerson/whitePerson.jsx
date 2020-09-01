@@ -1,18 +1,17 @@
 import React, { Component } from 'react'
-import PersonColor from "./personColor"
 
 class whitePerson extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			color: '',
 		}
 	}
 	handleChange(event){
-    this.setState({ color: event.target.value})
+    console.log(event)
+    this.props.handleColorChange(event.target.value)
   }
 	render() {
-		const color = this.state.color
+		const color = this.props.color
 		return (
 			<div>
 				<input
@@ -21,7 +20,6 @@ class whitePerson extends Component {
 						this.handleChange(event)
 					}}
 				/>
-				<PersonColor color={color}></PersonColor>
 			</div>
 		)
 	}

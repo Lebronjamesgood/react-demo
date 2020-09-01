@@ -1,8 +1,5 @@
 //home.js
 import React, { Component } from 'react'
-// import { Button, Input, Form, Checkbox, Card } from 'antd'
-import YellowPerson from "./yellowPerson/yellowPerson"
-import WhitePerson from "./whitePerson/whitePerson"
 
 export default class Person extends Component {
 	constructor(props) {
@@ -35,8 +32,6 @@ export default class Person extends Component {
 		]
 		return (
 			<div>
-        <YellowPerson></YellowPerson>
-        <WhitePerson></WhitePerson>
 				<form
 					onSubmit={event => {
 						this.onFinish(event)

@@ -9,7 +9,8 @@ import LifeCycle from "../views/lifeCycle/lifeCycle"
 import UserLogin from "../views/login/userLogin"
 import Home from "../views/home/home"
 import Layout from  "../views/layout/layout"
-
+import PersonColor from "../views/secondModule/person/whitePerson/personColor"
+import ContextTest from "../views/firstModule/contextTest/contextTest"
 function router(){
   return (
 		<Router>
@@ -23,6 +24,8 @@ function router(){
 						<Layout>
 							<Route path="/layout/lifeCycle" component={LifeCycle}></Route>
 							<Route path="/layout/person" component={Person}></Route>
+							<Route path="/layout/personColor" component={PersonColor}></Route>
+							<Route path="/layout/contextTest" component={ContextTest}></Route>
 							<Route
 								path="/layout/men"
 								render={() => (
