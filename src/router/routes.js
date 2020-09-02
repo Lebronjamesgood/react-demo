@@ -11,11 +11,13 @@ import Home from "../views/home/home"
 import Layout from  "../views/layout/layout"
 import PersonColor from "../views/secondModule/person/whitePerson/personColor"
 import ContextTest from "../views/firstModule/contextTest/contextTest"
+import Portals from  "../views/firstModule/portals/portals"
+import Refs from '../views/firstModule/refs/refs'   
 function router(){
   return (
 		<Router>
 			<Switch>
-				<Redirect path="/login" component={UserLogin}></Redirect>
+				{/* <Redirect path="/login" component={UserLogin}></Redirect> */}
 				<Route path="/login" component={UserLogin}></Route>
 				<Route path="/Home" component={Home}></Route>
 				<Route
@@ -26,6 +28,8 @@ function router(){
 							<Route path="/layout/person" component={Person}></Route>
 							<Route path="/layout/personColor" component={PersonColor}></Route>
 							<Route path="/layout/contextTest" component={ContextTest}></Route>
+							<Route path="/layout/refs" component={Refs}></Route>
+							{/* <Route path="/layout/portals" component={Portals}></Route> */}
 							<Route
 								path="/layout/men"
 								render={() => (
