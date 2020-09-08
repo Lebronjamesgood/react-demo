@@ -12,7 +12,9 @@ import Layout from  "../views/layout/layout"
 import PersonColor from "../views/secondModule/person/whitePerson/personColor"
 import ContextTest from "../views/firstModule/contextTest/contextTest"
 import Portals from  "../views/firstModule/portals/portals"
-import Refs from '../views/firstModule/refs/refs'   
+import Refs from '../views/firstModule/refs/refs' 
+import Example from "../views/firstModule/Hook/example"
+
 function router(){
   return (
 		<Router>
@@ -29,6 +31,7 @@ function router(){
 							<Route path="/layout/personColor" component={PersonColor}></Route>
 							<Route path="/layout/contextTest" component={ContextTest}></Route>
 							<Route path="/layout/refs" component={Refs}></Route>
+							<Route path="/layout/example" component={Example}></Route>
 							{/* <Route path="/layout/portals" component={Portals}></Route> */}
 							<Route
 								path="/layout/men"
