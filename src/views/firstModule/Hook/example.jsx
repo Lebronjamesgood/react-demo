@@ -11,6 +11,7 @@
 import React, { useState } from 'react'
 import './index.less'
 import EffectHook from "./effectHook"
+import GoodsTable from "./goodsTable"
 
 function Example() {
 	//初始 state 就是 0。值得注意的是，不同于 this.state，这里的 state 不一定要是一个对象 —— 如果你有需要，它也可以是。
@@ -37,8 +38,10 @@ function Example() {
 				Click me
 			</button>
 			<EffectHook friend={friend}></EffectHook>
+       {/* 自定义hook */}
+      <GoodsTable></GoodsTable>
 		</div>
 	)
 }
 
-export default Example
+export default Example.
