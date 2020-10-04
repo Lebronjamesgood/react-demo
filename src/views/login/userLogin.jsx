@@ -17,6 +17,7 @@ class userLogin extends Component {
     // return <div>{isLogin ? <Login/> : <NotLogin/>}</div>
   return (
 		<div className="user-login">
+      
 				{isLogin && <Login route={this.props} />}
 				{!isLogin && <NotLogin />}
 		</div>
