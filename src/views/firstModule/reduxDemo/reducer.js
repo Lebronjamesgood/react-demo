@@ -9,4 +9,5 @@ function counter(state = 0, action) {
   }
 }
 
+let store = 
 

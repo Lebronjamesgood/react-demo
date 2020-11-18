@@ -47,24 +47,22 @@ function add(){
   //将arguments转化成类数组
   let argu = Array.from(arguments)
   console.log('argu1', argu)
-  console.log('arguments', arguments)
+  console.log('argu1', argu.length)
   //利用闭包储存入参
   let argumentArr = function(){
-    console.log('argu12', argu)
     argu.push(...arguments)
     return argumentArr
   }
-  console.log("argu",argu)
-
   argumentArr.toString = function () {
-    console.log('argu12', argu)
+    console.log('argu123', argu)
 		return argu.reduce((a, b) => {
 			return a + b 
-		})
-	}
+    })
+  }
+  console.log('argumentArr1', argumentArr)
    return argumentArr
 }
 
-add(1)(2)(3)wanshang 
+add(1)(2)(3) 
 add(1, 2, 3)(4)
 add(1)(2)(3)(4)(5)
