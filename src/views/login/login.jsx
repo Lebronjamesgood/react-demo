@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Button, Input, Form, Checkbox,Card } from 'antd';
-import "./login.less";
+import React, { Component } from 'react'
+import { Button, Input, Form, Checkbox, Card } from 'antd'
+import './login.less'
 
 class login extends Component {
 	constructor(props) {
@@ -9,14 +9,14 @@ class login extends Component {
 	}
 
 	render() {
-    	const onFinish = values => {
-				console.log('Success:', values)
-				this.props.route.history.push({ pathname: '/home' })
-			}
+		const onFinish = values => {
+			console.log('Success:', values)
+			this.props.route.history.push({ pathname: '/layout/home' })
+		}
 
-			const onFinishFailed = errorInfo => {
-				console.log('Failed:', errorInfo)
-			}
+		const onFinishFailed = errorInfo => {
+			console.log('Failed:', errorInfo)
+		}
 		const layout = {
 			labelCol: {
 				span: 8,

@@ -18,7 +18,6 @@ class home extends Component {
 	render() {
 		return (
 			<div className="app-wrapper">
-				<Header isSHow={this.state.showHeader} />
 				<div className="my-sidebar">
 					<MainMeun route={this.props}  />
 				</div>

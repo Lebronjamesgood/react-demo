@@ -1,7 +1,7 @@
 import React,{Component} from "react"
-import store from "../../store/index"
-import { connect } from 'react-redux'
-import { getDeleteValueAction } from '../../store/actionCreators'
+import store from "../../store/store"
+// import { getDeleteValueAction } from '../../store/actionCreators'
+import getDeleteValueAction from '../../store/reducerModule/module1/actionCreators'
 
 class gameList extends Component {
 	constructor(props) {
@@ -24,12 +24,7 @@ class gameList extends Component {
 		)
 	}
 	delItem(index) {
-    // let action = getDeleteValueAction(index)
-    let action = {
-			type: 'input_delete_value',
-			index,
-		}
-    alert(action)
+    let action = getDeleteValueAction(index)
 		store.dispatch(action)
 	}
 	changeStore(){

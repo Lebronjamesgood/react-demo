@@ -1,5 +1,13 @@
+/*
+ * @Files: 
+ * @Version: 1.0
+ * @Author: zhengjiangwei
+ * @Date: 2020-08-24 19:33:28
+ * @LastEditors: zhengjiangwei
+ * @LastEditTime: 2021-08-18 15:33:20
+ */
 import React from "react"
-import { BrowserRouter as Router, Route, Switch,Redirect } from 'react-router-dom'
+import { HashRouter, Route, Switch,Redirect } from 'react-router-dom'
 import Person from '../views/secondModule/person/person'
 import Men from '../views/secondModule/men'
 import RichMen from "../views/secondModule/richMen/richMen"
@@ -18,15 +26,15 @@ import GameLIst  from "../views/redux/list"
 
 function router(){
   return (
-		<Router>
+		<HashRouter>
 			<Switch>
-				{/* <Redirect path="/login" component={UserLogin}></Redirect> */}
 				<Route path="/login" component={UserLogin}></Route>
-				<Route path="/Home" component={Home}></Route>
+				{/* <Route path="/Home" component={Home}></Route> */}
 				<Route
 					path="/layout"
 					render={() => (
 						<Layout>
+              <Route path="/layout/Home" component={Home}></Route>
 							<Route path="/layout/lifeCycle" component={LifeCycle}></Route>
 							<Route path="/layout/person" component={Person}></Route>
 							<Route path="/layout/personColor" component={PersonColor}></Route>
@@ -48,8 +56,9 @@ function router(){
 						</Layout>
 					)}
 				></Route>
+				<Redirect from="/" exact to="login"></Redirect>
 			</Switch>
-		</Router>
+		</HashRouter>
 	)
 }
 export default router
